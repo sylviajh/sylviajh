@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Research</title>
+
+<link rel="stylesheet"
+    type="text/css"
+    href="styles/site.css">
+</head>
+
+<body>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="projects.html">Projects</a></li>
+    </ul>
+</nav>
+
+<section>
+<h1>Research</h1>
+
+<picture>
+    <!-- Source: https://i0.wp.com/www.nowaklab.org/wp-content/uploads/2022/04/RP9_bvNj_400x400-2.jpg?resize=150%2C150&ssl=1-->
+    <img class="nowak-logo" src="images/nowak-lab-logo.png" alt=""  width="100" height="100">
+</picture>
+Source: <cite>Nowak Lab logo, taken from nowaklab.org</cite>
+
+<p>
+    <!-- Source: (original work) Sylvia Han-->
+    I'm currently working as a quantitative research assistant in the Nowak Lab at Weill Cornell Medicine. My job is to help facilitate the research of others in the lab by automating the previously manual measuring of cell characteristics.
+</p>
+</section>
+
+<section>
+<h2>ImageJ</h2>
+
+<P>
+    <!-- Source: (original work) Sylvia Han-->
+    In the Nowak Lab, images were taken of various (artifically created) wounds every two hours until they fully closed. These images were then sent to me for analysis using a program called ImageJ, which is commonly used by biologists to analyze images. Within ImageJ are plugins, which can be thought of as mini programs that serve specific functions. The plugin that I used for this project measures various characteristics of an artificially created wound. For example, its area. As time passed, the wounds would close and this would be reflected by a decreasing wound area. The data obtained from this would be used to help analyze the speed of wound closure and how this speed changes depending on different properties of the cells being used.
+</P>
+
+<figure>
+    <!-- Source: this was an image taken by the Nowak Lab-->
+    <img class="wide-photo" src="images/wound-original.png" alt="Original wound" width="800" height="598">
+    Source: <cite>Image taken by the Nowak Lab</cite>
+</figure>
+
+<p>
+    <!-- Source: (original work) Sylvia Han-->
+    The above image shows an artifically created wound viewed under the microscope. The wound, which is the "empty space" in the middle of the image, is surrounded by healthy cells. As time progresses, the cells will proliferate, causing the wound to close. The image below shows the same wound as before but 10 hours later. Notice how the empty space representing the wound has shrunk significantly as cells grow.
+</p>
+</section>
+
+<section>
+<h2>Wound Analysis</h2>
+
+<figure>
+    <!-- Source: this was an image taken by the Nowak Lab-->
+    <img class="wide-photo" src="images/wound-ten-hours-later.png" alt="Wound ten hours later" width="800" height="599">
+    Source: <cite>Image taken by the Nowak Lab</cite>
+</figure>
+
+<p>
+    <!-- Source: (original work) Sylvia Han-->
+    The ImageJ plugin detects the border of the wound and measures the following properties: wound area, percent of image the wound takes up, average width of wound, and standard deviation of wound width. The image below shows the border of the wound (outlined in cyan) as detected by the ImageJ plugin. As a wound closes over time, the values of the wound properties will also change accordingly, giving us indications about how fast the wound is closing. Eventually, all the wound properties measured by the plugin will reach 0, which would indicate that the wound has closed fully. In particular, the Nowak Lab is interested in how the wound area changes over time.
+</p>
+
+<figure>
+    <!-- Source: this was an image taken by the Nowak Lab and the border drawn in by ImageJ plugin Wound_healing_size_tool-->
+    <img class="wide-photo" src="images/wound-analysis.png" alt="Wound-with analysis" width="800" height="649">
+    Source: <cite>Image taken by the Nowak Lab and border drawn in by ImageJ plugin Wound_healing_size_tool</cite>
+</figure>
+</section>
+
+<section>
+<h2>Modifying ImageJ Plugin</h2>
+
+<p>
+    <!-- Source: (original work) Sylvia Han-->
+    In addition to running the plugin, I also modified parts of the code (written in Java) to help make it more compatible to the Nowak Lab's images. For example, the original plugin was coded with the intention of analyzing images with large, clearly visible wounds. However, the Nowak Lab also had images of wounds that were entirely closed, and the original plugin would immediately crash for these images since no wound was detected. I remedied this by making the plugin print out 0's for all the wound properties being measured instead of crashing.
+</p>
+</section>
+
+</body>
+
+</html>

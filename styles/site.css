@@ -1,0 +1,87 @@
+body {
+    background-color: #f5fcff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+
+section {
+    display: block;
+    background-color: white;
+    padding: 1px 10px;
+    margin-top: 15px;
+    margin-left: 30vw;
+    margin-right: 30vw;
+}
+
+.wide-photo {
+    display: block;
+    width: 100%;
+    height: auto;
+    min-width: 400px;
+    max-width: 800px;
+}
+
+/* nav bar
+*/
+nav ul {
+    display: flex;
+    list-style: none;
+    width: 100vw;
+    background-color: #ffffff;
+    height: auto;
+    padding: 0px;
+    line-height: 1.5;
+    margin: 0px;
+    border: 0px;
+}
+
+nav ul a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-size: large;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+nav ul li a:hover {
+  background-color: rgb(182, 213, 244);
+}
+
+/*
+home
+*/
+.introduction {
+    text-align: center;
+}
+
+h2 {
+    font-variant: small-caps;
+    border-left:#525396 solid 4px;
+}
+
+.long-photo {
+    display: block;
+    width: 50%;
+    height: auto;
+    min-width: 200px;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*
+research
+*/
+.nowak-logo {
+    display: block;
+}
+
+figure {
+    padding:0px;
+    margin:0px;
+}

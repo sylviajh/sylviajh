@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Projects</title>
+
+<link rel="stylesheet"
+    type="text/css"
+    href="styles/site.css">
+</head>
+
+<body>
+
+
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="projects.html">Projects</a></li>
+    </ul>
+</nav>
+
+<section>
+<h1>Haircare Website</h1>
+
+<figure>
+    <!-- Source: (original work) Sylvia Han-->
+    <img class="wide-photo" src="images/home-page.png" alt="Haircare site home page" width="800" height="381">
+</figure>
+
+<p>
+    <!-- Source: (original work) Sylvia Han-->
+    This past summer I was obsessed with trying out the curly girl method, a viral hair care routine that people with naturally wavy/curly hair use to enhance their curls. I ended up looking through many online forums and reviews trying to find products that would help tame my frizzy hair. The issue with many of the product recommendations I found is that they often only listed the name of the product. However, the curly girl method emphasizes the uniqueness of everyone's hair and how certain ingredients in hair products may not compatible with everyone's hair. Because of this, whenever I found a product recommendation from a Youtube video or personal blog, I would have to then go on to another website to search up the ingredients of the product. Because doing this every time was honestly a hassle, I wanted to create an easy way to see what ingredients were in what hair products.
+</p>
+
+<P>
+    <!-- Source: (original work) Sylvia Han-->
+    To get the data for my website, I used selenium to scrape the ulta.com website. In total, over 600 products and their respective ulta.com purchasing link and ingredients lists were obtained. After cleaning the data, I incorporated it into an interactive website using HTML, CSS, and JavaScript.
+</P>
+</section>
+
+<section>
+<h2>How it works</h2>
+
+<figure>
+    <!-- Source: (original work) Sylvia Han-->
+    <img class="wide-photo" src="images/home-page-dropdown.png" alt="Haircare site home page with dropdown" width="800" height="365">
+</figure>
+
+<p>
+    <!-- Source: (original work) Sylvia Han-->
+    On the home page, users can select a particular hair product brand from the dropdown menu. Users will then be directed to a page that lists all of the products for that brand. The name, ulta.com purchasing link, and ingredients list will all be shown for each product. Now, instead of needing to go through multiple pages to find an ingredients list for a product recommended by my hair stylist, I could accomplish the same task through my website, only much faster and more efficiently. In the future I hope to also add a filtering function that will filter in/out products that contain certain ingredients. Or, another idea that I had for my site was implementing a searching function that users could use to search for products containing or excluding certain ingredients.
+</p>
+
+<figure>
+    <!-- Source: (original work) Sylvia Han-->
+    <img class="wide-photo" src="images/product-page.png" alt="Haircare site product page" width="800" height="379">
+</figure>
+</section>
+
+<section>
+<h2>Data Cleaning</h2>
+
+<p>
+    <!-- Source: (original work) Sylvia Han-->
+    I also played around with Tableau and created a graphic of the top ingredients found in the products included on my website. Not surprisingly, water was the most common ingredient, appearing in 557 out of 697 products. Cleaning the data obtained from webscraping in order to make this graphic was actually quite a time consuming process. This is because many ingredients either have multiple different names to begin with or the sellers of the product decided to use multiple languages when listing out their ingredients. For example, there were over 20 different variations for "water". These include "Aqua", "Water/Aqua", "Eau", "Water (Aqua/Eau)", etc. I had to change all of these variations and change them all into "Water" so that I could accurately count how many products contained water.
+</p>
+
+<figure>
+    <!-- Source: (original work) Sylvia Han-->
+    <img class="wide-photo" src="images/haircare-ingredients-graph.png" alt="Haircare ingredients graph" width="800" height="494">
+</figure>
+</section>
+
+</body>
+
+</html>
